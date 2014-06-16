@@ -7,3 +7,5 @@ Run by entering
 $ python IMGtoASCII.py
 
 then typing file name and size when asked.
+
+Requires the Python Imaging Library (http://www.pythonware.com/products/pil/).
