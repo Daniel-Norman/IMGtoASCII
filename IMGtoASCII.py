@@ -20,8 +20,6 @@ def getChar(color):
 boxW = 2
 boxH = 3
 
-print sys.argv[0]
-
 filename = raw_input("Enter an image file path: ")
 im = Image.open(filename).convert('L')
 size = float(raw_input("Enter a size (in chars): ")) * 2
