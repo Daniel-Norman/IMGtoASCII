@@ -1,7 +1,7 @@
 '''
 Created on Jun 14, 2014
 
-@author: Daniel
+@author: Daniel Norman
 '''
 
 import Image
