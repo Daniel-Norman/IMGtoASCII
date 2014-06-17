@@ -9,7 +9,7 @@ import sys
 
 
 reverseChars = False
-chars = ' .,-:^=*<+ILZAM%#&@'
+chars = ' .-,=:^+<%I*LZAM#&@'
 
 def getChar(color):
     index = (255 - color) / 255.0 * (len(chars) - 1)
