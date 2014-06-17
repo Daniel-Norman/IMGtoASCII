@@ -6,7 +6,7 @@ Created on Jun 14, 2014
 
 import Image
 import sys
-
+import urllib, cStringIO
 
 reverseChars = False
 chars = ' .-,=:^+<%I*LZAM#&@'
@@ -21,7 +21,10 @@ boxW = 2
 boxH = 3
 
 filename = raw_input("Enter an image file path: ")
-im = Image.open(filename).convert('L')
+if 'http' in filename:
+    file_name = cStringIO.StringIO(urllib.urlopen(filename).read())
+im = Image.open(file_name).convert('L')
+
 size = float(raw_input("Enter a size (in chars): ")) * 2
 if (raw_input("Reverse colors? (y/n): ") in 'yesYes'):
     reverseChars = True
