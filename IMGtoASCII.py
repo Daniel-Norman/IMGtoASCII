@@ -20,9 +20,9 @@ def getChar(color):
 boxW = 2
 boxH = 3
 
-filename = raw_input("Enter an image file path: ")
-if 'http' in filename:
-    file_name = cStringIO.StringIO(urllib.urlopen(filename).read())
+file_name = raw_input("Enter an image file path: ")
+if 'http' in file_name:
+    file_name = cStringIO.StringIO(urllib.urlopen(file_name).read())
 im = Image.open(file_name).convert('L')
 
 size = float(raw_input("Enter a size (in chars): ")) * 2
