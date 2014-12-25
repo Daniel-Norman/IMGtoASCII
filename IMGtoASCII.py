@@ -4,7 +4,7 @@ Created on Jun 14, 2014
 @author: Daniel Norman
 '''
 
-import Image
+from PIL import Image
 import sys
 import urllib, cStringIO
 
