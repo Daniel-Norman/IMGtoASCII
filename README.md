@@ -8,4 +8,4 @@ $ python IMGtoASCII.py
 
 then typing file name and size when asked.
 
-Requires the Python Imaging Library (http://www.pythonware.com/products/pil/).
+Requires the Python Imaging Library (https://pypi.python.org/pypi/Pillow/2.6.1).
